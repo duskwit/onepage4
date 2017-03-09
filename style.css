@@ -1,0 +1,452 @@
+/*general*/
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Archivo Narrow', sans-serif;
+	overflow-x: hidden; 
+	color: #303030;
+}
+a:hover {
+	text-decoration: none;
+}
+p {
+	font-family: 'Archivo Narrow';
+}
+.container-centering {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; 
+}
+.container-centering-half {
+	min-height: 50vh;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; 
+}
+.section {
+	padding: 100px 0;
+	min-height: 100vh;
+}
+.half-section {
+	padding: 100px 0;
+	min-height: 50vh;
+}
+.section-title {
+	font-family: 'Archivo Narrow';
+	padding: 0;
+	margin: 0;
+	font-size: 3.8em;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+.section-text {
+	text-align: center;
+	font-size: 1.1em;
+	padding: 30px 0 60px;
+	line-height: 26px;
+	letter-spacing: 1px;
+}
+.bg-blue {
+	background-color: #6cbfd3;
+}
+button:hover {
+	-o-transition: .3s ease-in-out;
+	-moz-transition: .3s ease-in-out;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+a:hover {
+	-o-transition: .3s ease-in-out;
+	-moz-transition: .3s ease-in-out;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.mt-100 {
+	margin-top: 100px;
+}
+
+/*navbar*/
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	background-color: #6cbfd3;
+	overflow: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+.sidenav a {
+	font-family: 'Archivo Narrow';
+	letter-spacing: 2px;
+	text-align: center;
+	padding: 10px 0;
+	text-decoration: none;
+	font-size: 1.5em;
+	color: white;
+	display: block;
+	transition: 0.3s;
+}
+.sidenav a:hover,
+.sidenav a:active,
+.sidenav a:focus {
+	color: #d1f1f9;
+	text-decoration: none;
+}
+.sidenav a:hover, 
+.offcanvas a:focus {
+	color: #f1f1f1;
+}
+#nav-line {
+	margin: 35px 120px;
+	size: 4px;
+}
+#nav-logo {
+	font-family: 'Lobster';
+	color: white;
+	font-size: 1.8em;
+	line-height: 26px;
+	text-align: center;
+}
+.nav-icons a {
+	font-size: 1.8em;
+	padding: 0 5px;
+	display: inline-block !important;
+}
+span .fa {
+	position: fixed;
+	z-index: 1000;
+	left: 50px;
+	top: 30px;
+	color: #282828;
+	font-size: 2.1em;
+	cursor: pointer;
+}
+#openIcon {
+	display: block;
+}
+#openIconMobile {
+	display: none;
+}
+.sidenav .nav-details {
+	color: white;
+	padding: 25px 0;
+}
+#mySidenav > div.nav-details.text-center > p {
+	padding: 0;
+	margin: 0;
+	letter-spacing: 0.5px;
+}
+.sidenav img {
+	display: block;
+	margin: auto;
+	width: 50px;
+}
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+	text-decoration: none;
+}
+#main {
+	transition: margin-left 0.5s;
+}
+
+/*welcome page*/
+.landing-page {
+    background: rgba(0, 0, 0, 0) url("img/landing-page.jpg") no-repeat fixed 0 0 / cover;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+.landing-page h1 {
+	font-family: 'Lobster';
+	font-size: 5.5em;
+}
+.landing-page img {
+	width: 100px;
+}
+.landing-page h2 {
+	font-family: 'Archivo Narrow';
+	font-size: 3em;
+	letter-spacing: 3px;
+	color: white;
+	margin-bottom: 40px;
+}
+.landing-page button {
+	font-family: 'Archivo Narrow';
+	font-size: 1.3em;
+	padding: 6px 40px;
+	border-radius: 10px;
+	letter-spacing: 1px;
+	background: transparent;
+	border-color: #303030;
+	color: #303030;
+}
+.landing-page button:hover {
+	color: white;
+	background-color: #6cbfd3;
+	border-color: #6cbfd3;
+}
+
+/*about*/
+#about .section {
+	padding: 0;
+}
+.about-section .img-scis {
+	width: 700px;
+}
+.about-section .img-combs {
+	width: 380px;
+}
+.about-section button {
+	font-family: 'Archivo Narrow';
+	font-size: 1.1em;
+	padding: 6px 35px;
+	border-radius: 10px;
+	letter-spacing: 1px;
+	background: transparent;
+	border-color: #303030;
+	color: #303030;
+}
+.about-section button:hover {
+	background-color: #6cbfd3;
+	border-color: #6cbfd3;
+	color: white;
+}
+.about-section p {
+	font-size: 1.2em;
+	padding: 35px 0;
+	line-height: 32px;
+}
+
+/*services*/
+.services-section .section-title {
+	color: white;
+}
+.services-section h4 {
+	color: white;
+}
+.services-section img {
+	width: 100px;
+}
+.services-text {
+	font-weight: 900;
+	padding: 0 40px;
+}
+
+/*gallery*/
+#gallery .section {
+	padding: 0 0 100px 0;
+}
+.gallery-row {
+	margin: 40px 0;
+}
+.gallery-row img {
+	width: 300px;
+	padding: 0 30px;
+}
+.gallery-section button {
+	font-family: 'Archivo Narrow';
+	font-size: 1.3em;
+	margin-top: 30px;
+	padding: 6px 40px;
+	border-radius: 10px;
+	letter-spacing: 1px;
+	background: transparent;
+	border-color: #303030;
+	color: #303030;
+}
+.gallery-section button:hover {
+	background-color: #6cbfd3;
+	border-color: #6cbfd3;
+}
+#gal > div > div > div > a > img,
+#gallery > div.section.gallery-section > div > div > div > div > a > img {
+	padding: 0;
+	border-radius: 0px;
+}
+#myModal {
+	overflow: hidden;
+}
+#myModal > div > div > h3 {
+	text-align: center;
+	padding: 5px 0;
+}
+#myModal > div > div > button {
+	padding: 10px 20px 0 0;
+}
+#myModal > div {
+	width: 600px;
+	margin: 30px auto;
+}
+#myModal > div > div > div > a > img {
+	text-align: center;
+	width: 100%;
+} 
+
+/*special ocasions*/
+.special-section {
+	position: relative;
+	background: rgba(0, 0, 0, 0) url("img/wedding.jpg") no-repeat fixed 0 0 / cover;
+}
+.special-title {
+	font-family: 'Lobster';
+	font-size: 2.4em;
+	line-height: 35px;
+	padding: 20px 100px;
+}
+.special-text {
+	font-size: 1.2em;
+	padding: 10px;
+	line-height: 30px;
+}
+.special-section #products {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background-color: #6cbfd3;
+	opacity: 0.75;
+}
+#products img {
+	cursor: pointer;
+}
+#products0 {
+	height: 150px;
+	width: 100%;
+}
+.special-section #products .col-sm-3 {
+	height: 200px;
+}
+.special-section button {
+	display: block;
+	margin: auto;
+	font-family: 'Archivo Narrow';
+	font-size: 1.2em;
+	margin-top: 20px;
+	padding: 6px 35px;
+	border-radius: 10px;
+	letter-spacing: 1px;
+	background: transparent;
+	border-color: #303030;
+	color: #303030;
+}
+.special-section a:hover {
+	text-decoration: none;
+}
+.special-section button:hover {
+	color: white;
+	background-color: #6cbfd3;
+	border-color: #6cbfd3;
+}
+
+/*contact*/
+#contact .section {
+	padding: 0;
+}
+#contact img {
+	width: 450px;
+}
+#contact > div > div.container-fluid > div:nth-child(1) > div {
+	padding: 0;
+}
+#map {
+    height: 350px;
+}
+.form-control {
+	margin: 5px 0;
+}
+.contact-section .section-text {
+	padding: 20px;
+}
+.contact-section button {
+	font-family: 'Archivo Narrow';
+	font-size: 1.1em;
+	padding: 5px 40px;
+	border-radius: 10px;
+	letter-spacing: 1px;
+	background: transparent;
+	border-color: #303030;
+	color: #303030;
+}
+.contact-section button:hover {
+	color: white;
+	background-color: #6cbfd3;
+	border-color: #6cbfd3;
+}
+
+/*footer*/
+footer {
+	background-color: #6cbfd3;
+	color: #d1f1f9; 
+	padding: 50px 0 30px;
+}
+footer .fa {
+	font-size: 2.4em;
+	padding: 0 8px;
+	color: #d1f1f9;
+}
+footer .fa:hover {
+	color: white;
+}
+footer img {
+	width: 60px;
+}
+footer .footer-logo {
+	font-family: 'Lobster';
+	font-size: 1.8em;
+	line-height: 20px;
+	padding: 10px 0 0;
+}
+
+
+/*SCROLLUP*/
+#scrollRocket {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: #fec600;
+    background: #fec600;
+    opacity: 0.7;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.6s linear;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+#scrollRocket i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 16px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#scrollRocket:hover {
+    background: #f8b3c6;
+}
+#scrollRocket:hover i {
+    color: #fff;
+}
